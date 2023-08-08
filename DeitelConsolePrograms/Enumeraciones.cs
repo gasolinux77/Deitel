@@ -9,5 +9,13 @@
             Multiplicación = 3,
             División = 4       
         }
+
+        public enum Vengadores
+        {
+            Hulk = 1,
+            CaptainAmerica = 2,
+            BlackWidow = 3,
+            Ironman = 4
+        }
     }
 }

@@ -16,5 +16,16 @@ namespace DeitelEjemGraficos
         {
             InitializeComponent();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnPaint_Click(object sender, EventArgs e)
+        {
+            FrmPaint paint = new FrmPaint();
+            paint.ShowDialog();
+        }
     }
 }

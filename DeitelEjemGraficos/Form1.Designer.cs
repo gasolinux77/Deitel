@@ -28,20 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnPaint = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnPaint
+            // 
+            this.btnPaint.Location = new System.Drawing.Point(124, 36);
+            this.btnPaint.Name = "btnPaint";
+            this.btnPaint.Size = new System.Drawing.Size(75, 23);
+            this.btnPaint.TabIndex = 0;
+            this.btnPaint.Text = "Paint";
+            this.btnPaint.UseVisualStyleBackColor = true;
+            this.btnPaint.Click += new System.EventHandler(this.btnPaint_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(124, 82);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 211);
+            this.ClientSize = new System.Drawing.Size(329, 130);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnPaint);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Menú";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnPaint;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

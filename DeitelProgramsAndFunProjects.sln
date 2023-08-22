@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeitelConsolePrograms", "De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeitelEjemGraficos", "DeitelEjemGraficos\DeitelEjemGraficos.csproj", "{B013F52B-0B74-48C0-A06C-0B5E02BCFC16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris\Tetris.csproj", "{44A04DCC-0582-4D8A-AC9A-A5BAE93B0E90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B013F52B-0B74-48C0-A06C-0B5E02BCFC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B013F52B-0B74-48C0-A06C-0B5E02BCFC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B013F52B-0B74-48C0-A06C-0B5E02BCFC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44A04DCC-0582-4D8A-AC9A-A5BAE93B0E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A04DCC-0582-4D8A-AC9A-A5BAE93B0E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A04DCC-0582-4D8A-AC9A-A5BAE93B0E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A04DCC-0582-4D8A-AC9A-A5BAE93B0E90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

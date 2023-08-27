@@ -46,6 +46,7 @@
     <Compile Include="Enumeraciones.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Programs\Decoraciones.cs" />
     <Compile Include="Programs\HolaMundo.cs" />
     <Compile Include="Programs\Operaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

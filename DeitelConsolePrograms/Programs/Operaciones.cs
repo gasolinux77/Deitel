@@ -5,24 +5,22 @@ namespace DeitelConsolePrograms.Programs
 {
     public class Operaciones
     {
+        Decoraciones decoraciones = new Decoraciones();
         public void OperacionesBasicas(int operacion)
         {
             int numero1; // declara el primer número a sumar
             int numero2; // declara el segundo número a sumar
             int resultado = 0; ; // declara la suma de numero1 y numero2
 
-            Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("____________________PROGRAMA___________________");
-            Console.WriteLine(Environment.NewLine);
+            Console.Write(decoraciones.Cabecera());
 
             //Se añade comprobación para saber si escribe un entero       
             Console.Write("Escriba el primer entero: "); // mensaje para el usuario
                                                          // lee el primer número del usuario
             if (!(int.TryParse(Console.ReadLine(), out numero1)))
             {
-                Console.WriteLine(Environment.NewLine);
-                Console.Write("No ha introducido un número entero ");
-                Console.WriteLine(Environment.NewLine);
+                var mensaje = "No ha introducido un número entero ";              
+                Console.Write(decoraciones.MensajeConDosSaltos(mensaje));
                 return;
             }
 
@@ -31,9 +29,8 @@ namespace DeitelConsolePrograms.Programs
                                                           // lee el segundo número del usuario
             if (!(int.TryParse(Console.ReadLine(), out numero2)))
             {
-                Console.WriteLine(Environment.NewLine);
-                Console.Write("No ha introducido un número entero ");
-                Console.WriteLine(Environment.NewLine);
+                var mensaje = "No ha introducido un número entero ";
+                Console.Write(decoraciones.MensajeConDosSaltos(mensaje));
                 return;
             }
 
@@ -60,16 +57,12 @@ namespace DeitelConsolePrograms.Programs
                     break;
             }
 
-
-            
             if (operacion == (int)TiposOperaciones.División && numero2 == 0)
                 return;
             else
-                Console.WriteLine("El resultado es {0}", resultado); 
+                Console.WriteLine("El resultado es {0}", resultado);
 
-            Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("_______________________________________________");
-            Console.WriteLine(Environment.NewLine);
+            Console.Write(decoraciones.Pie());
         }
 
         public void Comparacion() 
@@ -77,17 +70,14 @@ namespace DeitelConsolePrograms.Programs
             int numero1; // declara el primer número a comparar
             int numero2; // declara el segundo número a comparar
 
-            Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("____________________PROGRAMA___________________");
-            Console.WriteLine(Environment.NewLine);
+            Console.Write(decoraciones.Cabecera());
 
             //pide al usuario y lee el primer número
             Console.Write("Escriba el primer entero: ");
             if (!(int.TryParse(Console.ReadLine(), out numero1)))
             {
-                Console.WriteLine(Environment.NewLine);
-                Console.Write("No ha introducido un número entero ");
-                Console.WriteLine(Environment.NewLine);
+                var mensaje = "No ha introducido un número entero ";
+                Console.Write(decoraciones.MensajeConDosSaltos(mensaje));
                 return;
             }
 
@@ -95,9 +85,8 @@ namespace DeitelConsolePrograms.Programs
             Console.Write("Escriba el segundo entero: ");
             if (!(int.TryParse(Console.ReadLine(), out numero2)))
             {
-                Console.WriteLine(Environment.NewLine);
-                Console.Write("No ha introducido un número entero ");
-                Console.WriteLine(Environment.NewLine);
+                var mensaje = "No ha introducido un número entero ";
+                Console.Write(decoraciones.MensajeConDosSaltos(mensaje));
                 return;
             }
 
@@ -119,17 +108,13 @@ namespace DeitelConsolePrograms.Programs
             if (numero1 >= numero2)
                 Console.WriteLine("{0} >= {1}", numero1, numero2);
 
-            Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("_______________________________________________");
-            Console.WriteLine(Environment.NewLine);
+            Console.Write(decoraciones.Pie());
         }
 
         //Programa creado a traves de un promt del chat de bing, pendiente de revisar **GitHub
         public void DibujarDivision() 
         {
-            Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("____________________PROGRAMA___________________");
-            Console.WriteLine(Environment.NewLine);
+            Console.Write(decoraciones.Cabecera());
 
             // Pedir al usuario que ingrese el dividendo y el divisor
             Console.WriteLine("Ingrese el dividendo:");
@@ -177,9 +162,7 @@ namespace DeitelConsolePrograms.Programs
 
             }
 
-            Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("_______________________________________________");
-            Console.WriteLine(Environment.NewLine);
+            Console.Write(decoraciones.Pie());
 
             Console.WriteLine("Presione una tecla para continuar...");
             Console.ReadKey();
